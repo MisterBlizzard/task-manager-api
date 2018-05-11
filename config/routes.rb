@@ -1,6 +1,7 @@
 require 'api_version_constraint'
 
 Rails.application.routes.draw do
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # os namespaces declarados devem ter uma pasta própria dentro da pasta controllers, é uma forma de organização
   # no path pode ser passado apenas o "/", chamando algo como www.site.com/api/tasks
