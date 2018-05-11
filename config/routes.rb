@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # se passar algo como path: "backend", seria www.site.com/backend/tasks
   # o domínio pode ser acessado com o subdominio declarado na constraint (api.site.com/tasks)
   namespace :api, defaults: { format: :json }, constraints: { subdomain: 'api' }, path: "/" do
-    
+      
   end
 end
